@@ -1,0 +1,513 @@
+.about-clinic {
+  padding-top: 90px;
+  background-image: linear-gradient(180deg, #ffffff 0%, rgba(246, 212, 214, 0.64) 53%, #ffffff 100%);
+  padding-bottom: 140px;
+
+  .contacts-title {
+    color: rgba(0, 0, 0, 0.87);
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 900;
+    margin-left: 97px;
+    margin-bottom: 40px;
+  }
+
+  .wrap-top-txt {
+    margin-top: 59px;
+
+    .main-txt {
+      color: $color__pink2;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 25px;
+    }
+
+    .sub-txt {
+      color: rgba(0, 0, 0, 0.67);
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 26px;
+    }
+  }
+
+  .subtitle-about_txt {
+    margin-top: 39px;
+    margin-bottom: 60px;
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      color: $color__pink2;
+      font-size: 30px;
+      font-weight: 900;
+    }
+  }
+
+  .subtitle-about_txt.second {
+    margin-bottom: 24px;
+    margin-top: 110px;
+  }
+
+  .wrap-video {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 160px;
+  }
+
+  .subtitle-about_txt_clients {
+    color: rgba(0, 0, 0, 0.87);
+    font-family: 'Playfair Display', serif;
+    font-size: 46px;
+    font-weight: 900;
+    max-width: 800px;
+  }
+
+  .subtitle-about_txt_clients.second {
+    max-width: unset;
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 24px;
+  }
+
+  .description-about {
+    color: $color__pink2;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+
+  .description-about.second {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .description-about.three {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .about-clinic_new-clinic {
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 55px;
+    padding-bottom: 50px;
+    background-image: url("../images/about-clinic/bg-new-clinic.png");
+
+    h2.caption {
+      color: $color__pink2;
+      font-size: 46px;
+      font-family: 'Playfair Display', serif;
+      font-weight: 900;
+      margin-bottom: 24px;
+    }
+
+    p.sub-caption {
+      color: $color__pink2;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 25px;
+    }
+
+    .logo {
+      max-width: 347px;
+    }
+
+    .btn-new-clinic {
+      padding: 13px 18px;
+      box-shadow: 0 3px 6px rgba(233, 30, 99, 0.5);
+      border-radius: 47px;
+      background-color: #e91e63;
+      color: rgba(255, 255, 255, 0.87);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+
+      &:hover {
+        box-shadow: 0 3px 26px #e91e63, 0 3px 6px rgba(233, 30, 99, 0.5);
+      }
+    }
+  }
+
+  .img_sub-logo {
+    text-align: center;
+  }
+
+  .advantages {
+    width: 100%;
+    padding: 60px;
+    border-radius: 3px;
+    background-color: $color__pink1;
+    margin-bottom: 140px;
+
+    .advantage-item {
+      display: flex;
+      align-items: flex-start;
+      align-content: center;
+
+      .image {
+        margin-right: 24px;
+
+        img {
+          max-width: 60px;
+        }
+      }
+
+      .title {
+        color: #ffffff;
+        font-size: 21px;
+        font-weight: 900;
+        font-family: 'Playfair Display', serif;
+        margin-bottom: 14px;
+      }
+
+      .sub-title {
+        color: rgba(0, 0, 0, 0.67);
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
+  }
+
+  .slider-contacts {
+    .slick-prev {
+      &:before {
+        color: $color__pink2;
+      }
+    }
+
+    .slick-next {
+      &:before {
+        color: $color__pink2;
+      }
+    }
+
+    .slide {
+      img {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .slider-workers {
+    .slick-prev {
+      &:before {
+        color: $color__pink2;
+      }
+    }
+
+    .slick-next {
+      &:before {
+        color: $color__pink2;
+      }
+    }
+
+    .slide {
+      max-width: 596px;
+      //box-shadow: 0 0 9px rgba(245, 162, 173, 0.47);
+      background-color: #ffffff;
+      padding: 10px;
+
+      .slide-wrap {
+        display: flex;
+        max-width: 573px;
+        margin: 0 auto;
+
+        .left-side {
+          width: 25%;
+        }
+
+        .right-side {
+          width: 75%;
+
+          .title {
+            color: rgba(0, 0, 0, 0.87);
+            font-family: 'Playfair Display', serif;
+            font-size: 21px;
+            font-weight: 900;
+          }
+
+          .profession {
+            color: $color__pink1;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 25px;
+            margin-bottom: 12px;
+          }
+
+          .procedures {
+            color: rgba(0, 0, 0, 0.47);
+            font-size: 13px;
+            font-weight: 400;
+            margin-bottom: 8px;
+          }
+
+          .enumeration {
+            color: rgba(0, 0, 0, 0.67);
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 24px;
+            margin-bottom: 20px;
+          }
+
+          .more {
+            color: $color__pink2;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.43px;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+
+  .custom-post {
+    margin-bottom: 26px;
+
+    .img-section {
+
+    }
+
+    .info-section {
+      background-color: $color__pink2;
+      padding: 16px 24px 34px;
+
+      .post-link {
+        font-family: 'Roboto', sans-serif;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 10px;
+        display: block;
+      }
+
+      .post-describe {
+        font-family: 'Roboto', sans-serif;
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 21px;
+      }
+    }
+  }
+
+  .img-cert-wrap {
+    border-radius: 3px;
+    transition: all .5s;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 0 9px rgba(245, 162, 173, 0.47);
+      transform: scale(1.1);
+    }
+  }
+}
+
+.about-clinic_sub-section {
+  background-color: #f6d4d6;
+  padding-top: 90px;
+  padding-bottom: 90px;
+
+  .title-txt {
+    color: $color__pink2;
+    font-size: 46px;
+    font-weight: 900;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 23px;
+  }
+
+  .subtitle-txt_min {
+    color: $color__pink2;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+    max-width: 680px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+
+  .review {
+    max-width: 750px;
+    box-shadow: 0 0 9px rgba(245, 162, 173, 0.47);
+    border-radius: 3px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding: 28px 45px 15px;
+
+    .txt-review {
+      color: rgba(0, 0, 0, 0.67);
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 26px;
+      margin-bottom: 12px;
+      position: relative;
+
+      &:before {
+        content: url('../images/about-clinic/Fill_3.png');
+        position: absolute;
+        left: -36px;
+        top: -4px;
+      }
+
+      &:after {
+        content: url('../images/about-clinic/Fill_4.png');
+        position: absolute;
+        right: 0;
+        bottom: -40px;
+      }
+    }
+
+    .txt-author {
+      color: #f5a2ad;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 21px;
+    }
+  }
+
+}
+
+.about-clinic_making-an-appointment {
+  padding-top: 140px;
+  padding-bottom: 140px;
+
+  .title {
+    text-align: center;
+    color: $color__pink2;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 35px;
+  }
+}
+
+.btn-review {
+  box-shadow: 0 3px 6px rgba(137, 2, 62, 0.3);
+  border-radius: 47px;
+  background-color: $color__pink2;
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  //padding: 17px 93px;
+  width: 280px;
+  height: 56px;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    box-shadow: 0 3px 26px #e91e63, 0 3px 6px rgba(233, 30, 99, 0.5);
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.m-0-auto {
+  margin: 0 auto;
+}
+@media (max-width: 991.98px) {
+  .about-clinic {
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .about-clinic {
+    .contacts-title {
+      font-size: 20px;
+      margin-left: 0;
+      margin-bottom: 15px;
+    }
+
+    .wrap-top-txt {
+      margin-top: 20px;
+    }
+
+    .subtitle-about_txt {
+      margin-top: 15px;
+      margin-bottom: 20px;
+    }
+
+    .subtitle-about_txt h2 {
+      font-size: 16px;
+    }
+
+    .wrap-video {
+      margin-bottom: 50px;
+    }
+
+    .subtitle-about_txt_clients {
+      font-size: 20px;
+    }
+
+    .about-clinic_new-clinic h2.caption {
+      font-size: 20px;
+    }
+
+    .about-clinic_new-clinic {
+      background-image: none;
+
+      .logo {
+        max-width: 280px;
+      }
+    }
+
+    .subtitle-about_txt.second {
+      margin-top: 15px;
+    }
+
+    .subtitle-about_txt_clients.second {
+      max-width: unset;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 24px;
+    }
+
+    .advantages {
+      padding: 13px;
+      margin-bottom: 30px;
+    }
+    .slider-contacts{
+      .slick-prev, .slick-next {
+        display: none!important;
+      }
+    }
+    .slider-workers {
+      .slick-prev, .slick-next {
+       display: none!important;
+      }
+      .slide {
+        .slide-wrap {
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+          .left-side {
+            width: 100%;
+            img {
+              margin: 0 auto;
+            }
+          }
+          .right-side {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .about-clinic_sub-section {
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+  .about-clinic_making-an-appointment {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
