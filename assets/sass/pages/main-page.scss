@@ -1,0 +1,60 @@
+.main-slider{
+  margin-bottom: 0!important;
+  ul.slick-dots{
+    width: unset;
+    left: 0;
+    padding-left: 96px;
+    bottom: 60px;
+    li{
+      button{
+        &:before{
+          color: #1f1f1f;
+        }
+      }
+    }
+    li.slick-active{
+      button{
+        &:before{
+          color: $color__pink2;
+        }
+      }
+    }
+    li:hover{
+      button{
+        &:before{
+          color: $color__pink2;
+        }
+      }
+    }
+  }
+  .wrap-slide{
+    position: relative;
+    .text{
+      position: absolute;
+      padding: 20px 96px 14px 96px;
+      top: 20%;
+      .first-line{
+        color: $color__pink1;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 21px;
+      }
+      .second-line{
+        color: $color__dark1;
+        font-family: $font_family1;
+        font-size: 36px;
+        font-weight: 900;
+      }
+      .third-line{
+        color: $color__dark2;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 26px;
+        margin-bottom: 59px;
+      }
+    }
+    img{
+      width: 100%;
+    }
+  }
+}

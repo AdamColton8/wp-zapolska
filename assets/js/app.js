@@ -21,6 +21,7 @@ import 'slick-carousel';
 // /*--------------------------------------------------------------
 // # Pages
 // --------------------------------------------------------------*/
+require('./pages/main-page')
 require('./pages/about-clinic')
 require('./pages/home')
 // require('./helpers/helpers')

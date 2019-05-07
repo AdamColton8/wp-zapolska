@@ -4,8 +4,8 @@
   padding-bottom: 140px;
 
   .contacts-title {
-    color: rgba(0, 0, 0, 0.87);
-    font-family: 'Playfair Display', serif;
+    color: $color__dark1;
+    font-family: $font_family1;
     font-size: 36px;
     font-weight: 900;
     margin-left: 97px;
@@ -23,7 +23,7 @@
     }
 
     .sub-txt {
-      color: rgba(0, 0, 0, 0.67);
+      color: $color__dark2;
       font-size: 15px;
       font-weight: 400;
       line-height: 26px;
@@ -35,7 +35,7 @@
     margin-bottom: 60px;
 
     h2 {
-      font-family: 'Playfair Display', serif;
+      font-family: $font_family1;
       color: $color__pink2;
       font-size: 30px;
       font-weight: 900;
@@ -54,8 +54,8 @@
   }
 
   .subtitle-about_txt_clients {
-    color: rgba(0, 0, 0, 0.87);
-    font-family: 'Playfair Display', serif;
+    color: $color__dark1;
+    font-family: $font_family1;
     font-size: 46px;
     font-weight: 900;
     max-width: 800px;
@@ -95,7 +95,7 @@
     h2.caption {
       color: $color__pink2;
       font-size: 46px;
-      font-family: 'Playfair Display', serif;
+      font-family: $font_family1;
       font-weight: 900;
       margin-bottom: 24px;
     }
@@ -156,12 +156,12 @@
         color: #ffffff;
         font-size: 21px;
         font-weight: 900;
-        font-family: 'Playfair Display', serif;
+        font-family: $font_family1;
         margin-bottom: 14px;
       }
 
       .sub-title {
-        color: rgba(0, 0, 0, 0.67);
+        color: $color__dark2;
         font-size: 13px;
         font-weight: 400;
         line-height: 24px;
@@ -221,8 +221,8 @@
           width: 75%;
 
           .title {
-            color: rgba(0, 0, 0, 0.87);
-            font-family: 'Playfair Display', serif;
+            color: $color__dark1;
+            font-family: $font_family1;
             font-size: 21px;
             font-weight: 900;
           }
@@ -243,7 +243,7 @@
           }
 
           .enumeration {
-            color: rgba(0, 0, 0, 0.67);
+            color: $color__dark2;
             font-size: 13px;
             font-weight: 400;
             line-height: 24px;
@@ -313,7 +313,7 @@
     color: $color__pink2;
     font-size: 46px;
     font-weight: 900;
-    font-family: 'Playfair Display', serif;
+    font-family: $font_family1;
     margin-bottom: 23px;
   }
 
@@ -337,7 +337,7 @@
     padding: 28px 45px 15px;
 
     .txt-review {
-      color: rgba(0, 0, 0, 0.67);
+      color: $color__dark2;
       font-size: 15px;
       font-weight: 400;
       line-height: 26px;
@@ -378,7 +378,7 @@
     color: $color__pink2;
     font-size: 30px;
     font-weight: 900;
-    font-family: 'Playfair Display', serif;
+    font-family: $font_family1;
     margin-bottom: 35px;
   }
 }

@@ -367,8 +367,6 @@ get_header();
             </section>
         </main>
     </div>
-    <script>
-    </script>
 <?php
 //get_sidebar();
 get_footer();
