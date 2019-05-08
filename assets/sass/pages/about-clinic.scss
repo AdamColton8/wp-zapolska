@@ -189,108 +189,9 @@
     }
   }
 
-  .slider-workers {
-    .slick-prev {
-      &:before {
-        color: $color__pink2;
-      }
-    }
 
-    .slick-next {
-      &:before {
-        color: $color__pink2;
-      }
-    }
 
-    .slide {
-      max-width: 596px;
-      //box-shadow: 0 0 9px rgba(245, 162, 173, 0.47);
-      background-color: #ffffff;
-      padding: 10px;
 
-      .slide-wrap {
-        display: flex;
-        max-width: 573px;
-        margin: 0 auto;
-
-        .left-side {
-          width: 25%;
-        }
-
-        .right-side {
-          width: 75%;
-
-          .title {
-            color: $color__dark1;
-            font-family: $font_family1;
-            font-size: 21px;
-            font-weight: 900;
-          }
-
-          .profession {
-            color: $color__pink1;
-            font-size: 15px;
-            font-weight: 400;
-            line-height: 25px;
-            margin-bottom: 12px;
-          }
-
-          .procedures {
-            color: rgba(0, 0, 0, 0.47);
-            font-size: 13px;
-            font-weight: 400;
-            margin-bottom: 8px;
-          }
-
-          .enumeration {
-            color: $color__dark2;
-            font-size: 13px;
-            font-weight: 400;
-            line-height: 24px;
-            margin-bottom: 20px;
-          }
-
-          .more {
-            color: $color__pink2;
-            font-size: 14px;
-            font-weight: 500;
-            letter-spacing: 0.43px;
-            text-transform: uppercase;
-          }
-        }
-      }
-    }
-  }
-
-  .custom-post {
-    margin-bottom: 26px;
-
-    .img-section {
-
-    }
-
-    .info-section {
-      background-color: $color__pink2;
-      padding: 16px 24px 34px;
-
-      .post-link {
-        font-family: 'Roboto', sans-serif;
-        color: #ffffff;
-        font-size: 18px;
-        font-weight: 400;
-        margin-bottom: 10px;
-        display: block;
-      }
-
-      .post-describe {
-        font-family: 'Roboto', sans-serif;
-        color: #ffffff;
-        font-size: 13px;
-        font-weight: 400;
-        line-height: 21px;
-      }
-    }
-  }
 
   .img-cert-wrap {
     border-radius: 3px;
@@ -303,7 +204,107 @@
     }
   }
 }
+.slider-workers {
+  .slick-prev {
+    &:before {
+      color: $color__pink2;
+    }
+  }
 
+  .slick-next {
+    &:before {
+      color: $color__pink2;
+    }
+  }
+
+  .slide {
+    max-width: 596px;
+    //box-shadow: 0 0 9px rgba(245, 162, 173, 0.47);
+    background-color: #ffffff;
+    padding: 10px;
+
+    .slide-wrap {
+      display: flex;
+      max-width: 573px;
+      margin: 0 auto;
+
+      .left-side {
+        width: 25%;
+      }
+
+      .right-side {
+        width: 75%;
+
+        .title {
+          color: $color__dark1;
+          font-family: $font_family1;
+          font-size: 21px;
+          font-weight: 900;
+        }
+
+        .profession {
+          color: $color__pink1;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 25px;
+          margin-bottom: 12px;
+        }
+
+        .procedures {
+          color: rgba(0, 0, 0, 0.47);
+          font-size: 13px;
+          font-weight: 400;
+          margin-bottom: 8px;
+        }
+
+        .enumeration {
+          color: $color__dark2;
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 24px;
+          margin-bottom: 20px;
+        }
+
+        .more {
+          color: $color__pink2;
+          font-size: 14px;
+          font-weight: 500;
+          letter-spacing: 0.43px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+.custom-post {
+  margin-bottom: 26px;
+
+  .img-section {
+
+  }
+
+  .info-section {
+    background-color: $color__pink2;
+    padding: 16px 24px 34px;
+
+    .post-link {
+      font-family: 'Roboto', sans-serif;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .post-describe {
+      font-family: 'Roboto', sans-serif;
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 21px;
+    }
+  }
+}
 .about-clinic_sub-section {
   background-color: #f6d4d6;
   padding-top: 90px;
@@ -478,26 +479,27 @@
         display: none!important;
       }
     }
-    .slider-workers {
-      .slick-prev, .slick-next {
-       display: none!important;
-      }
-      .slide {
-        .slide-wrap {
-          flex-direction: column;
-          text-align: center;
-          justify-content: center;
-          align-items: center;
-          align-content: center;
-          .left-side {
-            width: 100%;
-            img {
-              margin: 0 auto;
-            }
+
+  }
+  .slider-workers {
+    .slick-prev, .slick-next {
+      display: none!important;
+    }
+    .slide {
+      .slide-wrap {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        .left-side {
+          width: 100%;
+          img {
+            margin: 0 auto;
           }
-          .right-side {
-            width: 100%;
-          }
+        }
+        .right-side {
+          width: 100%;
         }
       }
     }

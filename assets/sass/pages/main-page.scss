@@ -1,60 +1,198 @@
-.main-slider{
-  margin-bottom: 0!important;
-  ul.slick-dots{
-    width: unset;
-    left: 0;
-    padding-left: 96px;
-    bottom: 60px;
-    li{
-      button{
-        &:before{
-          color: #1f1f1f;
+.main-page{
+  .main-slider{
+    margin-bottom: 0!important;
+    ul.slick-dots{
+      width: unset;
+      left: 0;
+      padding-left: 96px;
+      bottom: 60px;
+      li{
+        button{
+          &:before{
+            color: #1f1f1f;
+          }
+        }
+      }
+      li.slick-active{
+        button{
+          &:before{
+            color: $color__pink2;
+          }
+        }
+      }
+      li:hover{
+        button{
+          &:before{
+            color: $color__pink2;
+          }
         }
       }
     }
-    li.slick-active{
-      button{
-        &:before{
-          color: $color__pink2;
+    .wrap-slide{
+      position: relative;
+      .text{
+        position: absolute;
+        padding: 20px 96px 14px 96px;
+        top: 20%;
+        .first-line{
+          color: $color__pink1;
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 21px;
+        }
+        .second-line{
+          color: $color__dark1;
+          font-family: $font_family1;
+          font-size: 36px;
+          font-weight: 900;
+        }
+        .third-line{
+          color: $color__dark2;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 26px;
+          margin-bottom: 59px;
         }
       }
-    }
-    li:hover{
-      button{
-        &:before{
-          color: $color__pink2;
-        }
+      img{
+        width: 100%;
       }
     }
   }
-  .wrap-slide{
+  .main-posts-wrap{
+  }
+  .main-txt-wrap{
+    padding-top: 120px;
+    margin-bottom: 24px;
+  }
+  .main-txt{
+    color: $color__dark1;
+    font-size: 46px;
+    font-weight: 900;
+    font-family: $font_family1;
+    margin-bottom: 0;
+  }
+  .main-sub-txt{
+    color: $color__pink2;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+  .high-standard{
+    background-color: $color__pink1;
+    padding-top: 180px;
+    padding-bottom: 130px;
+  }
+  .main-high-txt{
+    color: #ffffff;
+    font-family: $font_family1;
+    font-size: 46px;
+    font-weight: 900;
+    margin-bottom: 24px;
+  }
+  .main-high_sub-txt{
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 36px;
+  }
+  .main-divider{
+    border: 1px solid rgba(255, 255, 255, 0.47);
+    width: 700px;
+  }
+  .wrap-grass{
+    display: flex;
+    justify-content: center;
     position: relative;
-    .text{
+    img{
       position: absolute;
-      padding: 20px 96px 14px 96px;
-      top: 20%;
-      .first-line{
-        color: $color__pink1;
+      z-index: 2;
+      top: -55px;
+    }
+  }
+  .advantages-main{
+    border-radius: 3px;
+    background-color: #ffffff;
+    padding: 60px;
+    margin-top: 105px;
+
+    .advantage-top-txt{
+      color: $color__pink1;
+      font-family: $font_family1;
+      font-size: 18px;
+      font-weight: 900;
+      letter-spacing: 0.7px;
+      line-height: 28px;
+      display: block;
+      margin-bottom: 60px;
+    }
+    .advantage-item {
+      display: flex;
+      align-items: flex-start;
+      align-content: center;
+
+      .image {
+        margin-right: 24px;
+
+        img {
+          max-width: 60px;
+        }
+      }
+
+      .title {
+        color: $color__pink2;
+        font-size: 21px;
+        font-weight: 900;
+        font-family: $font_family1;
+        margin-bottom: 14px;
+      }
+
+      .sub-title {
+        color: $color__dark2;
         font-size: 13px;
         font-weight: 400;
-        line-height: 21px;
-      }
-      .second-line{
-        color: $color__dark1;
-        font-family: $font_family1;
-        font-size: 36px;
-        font-weight: 900;
-      }
-      .third-line{
-        color: $color__dark2;
-        font-size: 15px;
-        font-weight: 400;
-        line-height: 26px;
-        margin-bottom: 59px;
+        line-height: 24px;
       }
     }
-    img{
-      width: 100%;
+  }
+  .slider-contacts {
+    .slick-prev {
+      &:before {
+        color: #fff;
+      }
+    }
+
+    .slick-next {
+      &:before {
+        color: #fff;
+      }
+    }
+
+    .slide {
+      img {
+        margin: 0 auto;
+      }
     }
   }
 }
+.btn-about-clinic{
+  width: 280px;
+  height: 56px;
+  box-shadow: 0 3px 6px rgba(137, 2, 62, 0.3);
+  border-radius: 47px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $color__pink2;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.43px;
+  text-transform: uppercase;
+  &:hover{
+    box-shadow: 0 3px 26px rgba(233, 30, 99, 0.5), 0 3px 6px rgba(137, 2, 62, 0.3);
+    color: $color__pink2;
+  }
+}
+
