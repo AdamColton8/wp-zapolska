@@ -4,3 +4,36 @@
 a:visited {
   color: #fff;
 }
+.main-post{
+  transition: .3s;
+  margin-bottom: 20px;
+  box-shadow: 0 0 9px rgba(245, 162, 173, 0.47);
+  &:hover{
+    transform: scale(1.05);
+  }
+  .post-txt{
+    background-color: #f6d4d6;
+    padding: 16px 24px;
+    .title-description{
+      margin-bottom: 0;
+      a{
+        color: $color__pink2;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        display: block;
+      }
+    }
+  }
+  .post-img{
+    img{
+      max-height: 237px;
+    }
+  }
+  .post-date{
+    color: $color__dark2;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+}

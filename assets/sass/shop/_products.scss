@@ -1,0 +1,45 @@
+.product_wrap{
+  max-width: 350px;
+  box-shadow: 0 0 9px rgba(245, 162, 173, 0.47);
+  border-radius: 3px;
+  background-color: #ffffff;
+  text-decoration: none;
+  transition: .3s;
+  margin-bottom: 20px;
+  &:hover{
+    transform: scale(1.05);
+  }
+  .wrap-product-img{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .wrap-descriptions{
+    padding: 0 17px 17px 17px;
+    h2.woocommerce-loop-product__title{
+      color: $color__pink2;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 26px;
+      margin-bottom: 6px;
+    }
+    .price{
+      color: $color__pink2;
+      font-size: 21px;
+      font-weight: 700;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .title-description{
+      color: $color__dark2;
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 18px;
+      margin-bottom: 30px;
+    }
+  }
+  a{
+    text-decoration: none;
+  }
+}
+

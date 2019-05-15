@@ -211,3 +211,17 @@ function wptpnew_create_post_type() {
 }
 add_action( 'init', 'wptpnew_create_post_type' );
 
+
+
+//add small description on product
+add_action( 'woocommerce_after_shop_loop_item_title', 'my_add_short_description', 9 );
+function my_add_short_description() {
+    if( has_excerpt() ){
+        echo '<div class="title-description">' . wp_trim_words(get_the_excerpt(), 8, '...') . '</div>';
+    }
+}
+//remove button 'add to cart'
+remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );
+
+//custom trim words

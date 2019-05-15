@@ -185,7 +185,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: $color__pink2;
+  color: $color__pink2!important;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.43px;
@@ -196,3 +196,48 @@
   }
 }
 
+.our-products-main{
+  background-image: linear-gradient(180deg, #ffffff 0%, #f6d4d6 100%);
+  padding-top: 140px;
+  padding-bottom: 120px;
+
+}
+.to-catalog_wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  .link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+      margin-bottom: 36px;
+    }
+  }
+  &:hover{
+    cursor: pointer;
+  }
+  span{
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+.questions-wrap{
+  background: #fff;
+  padding: 136px 40px 60px;
+  .wrap-card{
+    button.btn-link{
+      color: $color__dark1;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 21px;
+      padding: 0;
+      margin-bottom: 15px;
+    }
+    .card-body{
+      margin-bottom: 10px;
+    }
+  }
+}
