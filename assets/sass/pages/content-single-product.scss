@@ -1,0 +1,90 @@
+.page-content_single-product{
+  .product-title_main{
+    h1{
+      color: rgba(0, 0, 0, 0.87);
+      font-family: $font_family1;
+      font-size: 36px;
+      font-weight: 900;
+    }
+  }
+  .woocommerce-product-gallery{
+    box-shadow: 0 0 24px rgba(234, 99, 140, 0.47);
+    background-color: #ffffff;
+    max-width: 360px;
+    width: 100%!important;
+  }
+  .main-summary{
+    .wrap_price-availability{
+      display: flex;
+      justify-content: space-between;
+      max-width: 500px;
+      align-items: center;
+      margin-bottom: 48px;
+    }
+    .price{
+      margin-bottom: 0;
+      //margin-bottom: 48px;
+      span{
+        color: $color__pink2;
+        font-size: 41px;
+        font-weight: 700;
+      }
+    }
+    .stock{
+      color: $color__pink2!important;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 21px;
+    }
+    .add-to-cart{
+      max-width: 500px;
+      margin-bottom: 50px;
+      .cart{
+        .quantity{
+          input.qty{
+            box-shadow: 0 0 9px rgba(245, 162, 173, 0.47);
+            border: none;
+            width: 92px;
+          }
+        }
+        button.single_add_to_cart_button{
+          float: right;
+          box-shadow: 0 3px 6px rgba(137, 2, 62, 0.3);
+          border-radius: 23px;
+          background-color: $color__pink2;
+          &:hover{
+            background-color: #f5a2ad;
+          }
+        }
+      }
+    }
+    .description-product{
+      .title{
+        color: $color__pink2;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        margin-bottom: 9px;
+      }
+      .descr{
+        .woocommerce-product-details__short-description{
+          color: $color__dark2;
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 24px;
+          max-width: 600px;
+        }
+      }
+    }
+
+  }
+  .woocommerce-product-gallery__image{
+    height: 400px;
+    img.wp-post-image{
+      max-height: 100%;
+      width: auto!important;
+      margin: 0 auto;
+      padding: 20px;
+    }
+  }
+}

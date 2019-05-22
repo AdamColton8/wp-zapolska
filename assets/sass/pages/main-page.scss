@@ -1,52 +1,61 @@
-.main-page{
-  .main-slider{
-    margin-bottom: 0!important;
-    ul.slick-dots{
+.main-page {
+  .main-slider {
+    margin-bottom: 0 !important;
+
+    ul.slick-dots {
       width: unset;
       left: 0;
       padding-left: 96px;
       bottom: 60px;
-      li{
-        button{
-          &:before{
+
+      li {
+        button {
+          &:before {
             color: #1f1f1f;
           }
         }
       }
-      li.slick-active{
-        button{
-          &:before{
+
+      li.slick-active {
+        button {
+          &:before {
             color: $color__pink2;
           }
         }
       }
-      li:hover{
-        button{
-          &:before{
+
+      li:hover {
+        button {
+          &:before {
             color: $color__pink2;
           }
         }
       }
     }
-    .wrap-slide{
+
+    .wrap-slide {
       position: relative;
-      .text{
+
+      .text {
         position: absolute;
         padding: 20px 96px 14px 96px;
         top: 20%;
-        .first-line{
+
+        .first-line {
           color: $color__pink1;
           font-size: 13px;
           font-weight: 400;
           line-height: 21px;
         }
-        .second-line{
+
+        .second-line {
           color: $color__dark1;
           font-family: $font_family1;
           font-size: 36px;
           font-weight: 900;
         }
-        .third-line{
+
+        .third-line {
           color: $color__dark2;
           font-size: 15px;
           font-weight: 400;
@@ -54,70 +63,82 @@
           margin-bottom: 59px;
         }
       }
-      img{
+
+      img {
         width: 100%;
       }
     }
   }
-  .main-posts-wrap{
+
+  .main-posts-wrap {
   }
-  .main-txt-wrap{
+
+  .main-txt-wrap {
     padding-top: 120px;
     margin-bottom: 24px;
   }
-  .main-txt{
+
+  .main-txt {
     color: $color__dark1;
     font-size: 46px;
     font-weight: 900;
     font-family: $font_family1;
     margin-bottom: 0;
   }
-  .main-sub-txt{
+
+  .main-sub-txt {
     color: $color__pink2;
     font-size: 13px;
     font-weight: 400;
     line-height: 21px;
   }
-  .high-standard{
+
+  .high-standard {
     background-color: $color__pink1;
     padding-top: 180px;
     padding-bottom: 130px;
   }
-  .main-high-txt{
+
+  .main-high-txt {
     color: #ffffff;
     font-family: $font_family1;
     font-size: 46px;
     font-weight: 900;
     margin-bottom: 24px;
   }
-  .main-high_sub-txt{
+
+  .main-high_sub-txt {
     color: #ffffff;
     font-size: 15px;
     font-weight: 400;
     line-height: 25px;
     margin-bottom: 36px;
   }
-  .main-divider{
+
+  .main-divider {
     border: 1px solid rgba(255, 255, 255, 0.47);
     width: 700px;
   }
-  .wrap-grass{
+
+  .wrap-grass {
     display: flex;
     justify-content: center;
     position: relative;
-    img{
+
+    img {
       position: absolute;
       z-index: 2;
       top: -55px;
     }
   }
-  .advantages-main{
+
+  .advantages-main {
     border-radius: 3px;
     background-color: #ffffff;
     padding: 60px;
     margin-top: 105px;
 
-    .advantage-top-txt{
+    .advantage-top-txt {
       color: $color__pink1;
       font-family: $font_family1;
       font-size: 18px;
@@ -127,6 +148,7 @@
       display: block;
       margin-bottom: 60px;
     }
+
     .advantage-item {
       display: flex;
       align-items: flex-start;
@@ -156,6 +178,7 @@
       }
     }
   }
+
   .slider-contacts {
     .slick-prev {
       &:before {
@@ -176,7 +199,8 @@
     }
   }
 }
-.btn-about-clinic{
+
+.btn-about-clinic {
   width: 280px;
   height: 56px;
   box-shadow: 0 3px 6px rgba(137, 2, 62, 0.3);
@@ -185,50 +209,59 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: $color__pink2!important;
+  color: $color__pink2 !important;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.43px;
   text-transform: uppercase;
-  &:hover{
+
+  &:hover {
     box-shadow: 0 3px 26px rgba(233, 30, 99, 0.5), 0 3px 6px rgba(137, 2, 62, 0.3);
     color: $color__pink2;
   }
 }
 
-.our-products-main{
+.our-products-main {
   background-image: linear-gradient(180deg, #ffffff 0%, #f6d4d6 100%);
   padding-top: 140px;
   padding-bottom: 120px;
 
 }
-.to-catalog_wrap{
+
+.to-catalog_wrap {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
-  .link{
+
+  .link {
     display: flex;
     flex-direction: column;
     align-items: center;
-    img{
+
+    img {
       margin-bottom: 36px;
     }
   }
-  &:hover{
+
+  &:hover {
     cursor: pointer;
   }
-  span{
-    &:hover{
+
+  span {
+    &:hover {
       text-decoration: underline;
     }
   }
 }
-.questions-wrap{
+
+.questions-wrap {
+  margin-top: -100px;
   background: #fff;
   padding: 136px 40px 60px;
-  .wrap-card{
-    button.btn-link{
+
+  .wrap-card {
+    button.btn-link {
       color: $color__dark1;
       font-size: 16px;
       font-weight: 400;
@@ -236,8 +269,256 @@
       padding: 0;
       margin-bottom: 15px;
     }
-    .card-body{
+
+    .card-body {
       margin-bottom: 10px;
     }
+  }
+}
+
+.main-txt-pink {
+  color: $color__pink2;
+  font-family: $font_family1;
+  font-size: 46px;
+  font-weight: 900;
+}
+
+.sub-main_txt-pink {
+  color: $color__pink2;
+  font-family: $font_family1;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.section-mailing {
+  padding-top: 86px;
+  padding-bottom: 85px;
+  background-image: url("../images/main-page/bg-mailing.jpg");
+  background-size: cover;
+
+  .input-mailing {
+    box-shadow: 0 0 9px rgba(245, 162, 173, 0.47);
+    border-radius: 3px;
+    background-color: #ffffff;
+    text-indent: 20px;
+    color: #f5a2ad;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+    max-width: 457px;
+    display: inline-block;
+    border: 1px solid #ffe4e7;
+
+    &::placeholder {
+      color: #f5a2ad;
+      opacity: 1;
+    }
+  }
+
+  .btn-mailing {
+    box-shadow: 0 3px 6px rgba(137, 2, 62, 0.3);
+    border-radius: 3px;
+    background-color: $color__pink2;
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    display: inline-block;
+    height: calc(2.875rem + 2px);
+    border: none;
+
+    &:hover {
+      background-color: #ff92b3;
+      border-radius: 3px;
+      box-shadow: 0 3px 6px rgba(137, 2, 62, 0.3);
+      border-color: transparent;
+    }
+  }
+
+  .sub-txt-mailing {
+    color: $color__dark2;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  .main-txt-mailing {
+    margin-bottom: 10px;
+    color: $color__pink2;
+    font-family: $font_family1;
+    font-size: 21px;
+    font-weight: 900;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024.98px) {
+  .main-page {
+    .main-slider {
+      ul.slick-dots {
+        bottom: 6px;
+      }
+      .wrap-slide {
+        .text{
+          top: 5%;
+          .second-line {
+            font-size: 20px;
+          }
+          .third-line {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+    .main-txt-wrap {
+      padding-top: 25px;
+      margin-bottom: 18px;
+    }
+    .main-txt {
+      font-size: 26px;
+    }
+    .high-standard {
+      padding-top: 69px;
+      padding-bottom: 43px;
+    }
+    .main-high-txt {
+      font-size: 30px;
+    }
+    .main-high_sub-txt {
+      margin-bottom: 10px;
+    }
+    .wrap-grass img {
+      position: absolute;
+      z-index: 2;
+      top: -268px;
+      max-width: 200px;
+      right: -24px;
+    }
+    .advantages-main {
+      padding: 31px;
+      margin-top: 35px;
+      .advantage-top-txt{
+        margin-bottom: 34px;
+      }
+    }
+    .slider-contacts{
+      ul.slick-dots{
+        bottom: -12px;
+      }
+    }
+    .our-products-main{
+      padding-top: 30px;
+      padding-bottom: 35px;
+    }
+    .questions-wrap {
+      margin-top: -54px;
+      padding: 75px 30px 26px;
+      margin-bottom: 30px;
+      .main-txt-pink {
+        font-size: 30px;
+        margin-bottom: 30px;
+      }
+      #accordionSecond{
+        margin-bottom: 30px;
+      }
+    }
+    .section-mailing {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .main-page {
+    .main-divider {
+      border: 1px solid rgba(255, 255, 255, 0.47);
+      width: 100%;
+    }
+    .main-txt {
+      font-size: 18px;
+    }
+    .main-txt-wrap {
+      padding-top: 20px;
+      margin-bottom: 15px;
+    }
+    .main-slider {
+      ul.slick-dots {
+        bottom: 6px;
+      }
+      .wrap-slide {
+        .text{
+          padding: 0px 15px 14px 15px;
+          top: 7%;
+          .second-line {
+            font-size: 13px;
+          }
+          .third-line {
+            display: none;
+          }
+        }
+      }
+      .btn-review{
+        display: none;
+      }
+    }
+    .slider-contacts{
+      margin-top: 20px;
+      margin-bottom: 60px;
+      .slick-prev, .slick-next{
+        display: none!important;
+      }
+      .slide{
+        img{
+          max-width: 100%;
+        }
+      }
+    }
+    .advantages-main {
+      padding: 15px;
+      margin-top: 25px;
+      .advantage-item{
+        margin-bottom: 40px;
+      }
+    }
+    .wrap-grass{
+      display: none;
+    }
+    .high-standard {
+      background-color: #f5a2ad;
+      padding-top: 20px;
+      padding-bottom: 25px;
+    }
+    .main-high-txt {
+      font-size: 19px;
+    }
+    .questions-wrap {
+      margin-top: 20px;
+      margin-bottom: 40px;
+      padding: 20px;
+      .main-txt-pink {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      #accordionSecond{
+        margin-bottom: 30px;
+      }
+      .wrap-card button.btn-link {
+        text-align: left;
+        white-space: normal;
+        margin-bottom: 40px;
+      }
+    }
+    .btn-mailing{
+      width: 100%;
+      margin-top: 20px;
+    }
+    .our-products-main{
+      padding-top: 30px;
+      padding-bottom: 35px;
+    }
+  }
+  section.main-page{
+    padding-bottom: 45px;
   }
 }

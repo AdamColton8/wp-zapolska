@@ -27,8 +27,7 @@
       color: $color__pink2;
       font-size: 21px;
       font-weight: 700;
-      display: flex;
-      justify-content: flex-end;
+
     }
     .title-description{
       color: $color__dark2;
@@ -40,6 +39,19 @@
   }
   a{
     text-decoration: none;
+  }
+  a.add_to_cart_button{
+    box-shadow: 0 3px 6px rgba(137, 2, 62, 0.3);
+    border-radius: 23px;
+    background-color: $color__pink2;
+    padding: 5px 10px;
+    color: #fff;
+    margin-top: -4px;
+    float: right;
+    transition: 0.3s;
+    &:hover{
+      box-shadow: 0 3px 6px rgba(130, 1, 58, 0.65);
+    }
   }
 }
 

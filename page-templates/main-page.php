@@ -82,6 +82,14 @@ get_header();
                     }
                     wp_reset_postdata();
                     ?>
+                    <div class="col-md-6 col-lg-4 col-12">
+                        <div class="to-catalog_wrap">
+                            <a class="link">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/main-page/see_more.png">
+                                <span class="main-sub-txt">Все услуги</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-1"></div>
@@ -143,7 +151,7 @@ get_header();
         <section class="high-standard">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-12">
+                    <div class="col-lg-6 col-md-9 col-12">
                         <h2 class="main-high-txt">Клиника с высокими стандартами</h2>
                         <p class="main-high_sub-txt">
                             Мы гордимся тем, что уже 12 лет клиника принимает своих клиентов, которые за это время стали
@@ -267,7 +275,7 @@ get_header();
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h2 class="main-txt mb-lg-3">
+                        <h2 class="main-txt mb-lg-3 mb-md-2">
                             Продукты для Вашей кожи
                         </h2>
                         <p class="main-sub-txt">
@@ -313,13 +321,14 @@ get_header();
                     </div>
                 </div>
                 <div class="row">
+                    <div class="col-md-12 col-lg-1 col-12"></div>
                     <?php
                     $args = array('numberposts' => 2, 'category' => 22, 'orderby' => 'date');
                     $myposts = get_posts($args);
                     foreach ($myposts as $post) {
                         setup_postdata($post);
                         ?>
-                        <div class="col-md-6 col-lg-4 col-12">
+                        <div class="col-md-4 col-lg-4 col-12">
                             <div class="main-post">
                                 <div class="post-img">
                                     <?php $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID), 'thumbnail'); ?>
@@ -329,7 +338,7 @@ get_header();
                                     <div class="post-date"><?php echo get_the_date('j F Y'); ?></div>
                                     <h3 class="title-description">
                                         <a href="<?php the_permalink(); ?>">
-                                            <?php echo wp_trim_words( get_the_title(), 7, '' ); ?>
+                                            <?php echo wp_trim_words(get_the_title(), 7, ''); ?>
                                         </a>
                                     </h3>
                                 </div>
@@ -339,7 +348,7 @@ get_header();
                     }
                     wp_reset_postdata();
                     ?>
-                    <div class="col-md-6 col-lg-4 col-12">
+                    <div class="col-md-4 col-lg-3 col-12">
                         <div class="to-catalog_wrap">
                             <a class="link">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/main-page/see_more.png">
@@ -352,51 +361,88 @@ get_header();
                     <div class="col-12">
                         <div class="questions-wrap">
                             <div class="row">
-                                <div class="col-12">
-                                    <h2></h2>
+                                <div class="col-lg-3"></div>
+                                <div class="col-lg-8 col-12">
+                                    <h2 class="main-txt-pink mb-lg-5">Часто задаваемые вопросы</h2>
                                 </div>
                                 <div class="col-lg-6 col-md-12">
                                     <div class="accordion" id="accordionFirst">
                                         <div class="wrap-card">
                                             <div class="card-header" id="headingOne">
                                                 <h5 class="mb-0">
-                                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                                            data-target="#collapseOne" aria-expanded="true"
+                                                            aria-controls="collapseOne">
                                                         Какой интервал по времени должен быть между процедурами?
                                                     </button>
                                                 </h5>
                                             </div>
 
-                                            <div id="collapseOne" class="collapse collapsed" aria-labelledby="headingOne" data-parent="#accordionFirst">
+                                            <div id="collapseOne" class="collapse collapsed"
+                                                 aria-labelledby="headingOne" data-parent="#accordionFirst">
                                                 <div class="card-body">
-                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                    terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+                                                    skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                                    Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                                    single-origin coffee nulla assumenda shoreditch et. Nihil anim
+                                                    keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                                                    occaecat craft beer farm-to-table, raw denim aesthetic synth
+                                                    nesciunt you probably haven't heard of them accusamus labore
+                                                    sustainable VHS.
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="wrap-card">
                                             <div class="card-header" id="headingTwo">
                                                 <h5 class="mb-0">
-                                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    <button class="btn btn-link collapsed" type="button"
+                                                            data-toggle="collapse" data-target="#collapseTwo"
+                                                            aria-expanded="false" aria-controls="collapseTwo">
                                                         Как повлияет процедура лазерной эпиляции на беременность?
                                                     </button>
                                                 </h5>
                                             </div>
-                                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionFirst">
+                                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                                 data-parent="#accordionFirst">
                                                 <div class="card-body">
-                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                    terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+                                                    skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                                    Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                                    single-origin coffee nulla assumenda shoreditch et. Nihil anim
+                                                    keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                                                    occaecat craft beer farm-to-table, raw denim aesthetic synth
+                                                    nesciunt you probably haven't heard of them accusamus labore
+                                                    sustainable VHS.
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="wrap-card">
                                             <div class="card-header" id="headingThree">
                                                 <h5 class="mb-0">
-                                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    <button class="btn btn-link collapsed" type="button"
+                                                            data-toggle="collapse" data-target="#collapseThree"
+                                                            aria-expanded="false" aria-controls="collapseThree">
                                                         Как повлияет процедура лазерной эпиляции на беременность?
                                                     </button>
                                                 </h5>
                                             </div>
-                                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionFirst">
+                                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                                 data-parent="#accordionFirst">
                                                 <div class="card-body">
-                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                    terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+                                                    skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                                    Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                                    single-origin coffee nulla assumenda shoreditch et. Nihil anim
+                                                    keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                                                    occaecat craft beer farm-to-table, raw denim aesthetic synth
+                                                    nesciunt you probably haven't heard of them accusamus labore
+                                                    sustainable VHS.
                                                 </div>
                                             </div>
                                         </div>
@@ -407,49 +453,141 @@ get_header();
                                         <div class="wrap-card">
                                             <div class="card-header" id="headingFour">
                                                 <h5 class="mb-0">
-                                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                                            data-target="#collapseFour" aria-expanded="true"
+                                                            aria-controls="collapseFour">
                                                         С чем связаны болезненные ощущения после процедуры?
                                                     </button>
                                                 </h5>
                                             </div>
 
-                                            <div id="collapseFour" class="collapse collapsed" aria-labelledby="headingFour" data-parent="#accordionSecond">
+                                            <div id="collapseFour" class="collapse collapsed"
+                                                 aria-labelledby="headingFour" data-parent="#accordionSecond">
                                                 <div class="card-body">
-                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                    terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+                                                    skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                                    Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                                    single-origin coffee nulla assumenda shoreditch et. Nihil anim
+                                                    keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                                                    occaecat craft beer farm-to-table, raw denim aesthetic synth
+                                                    nesciunt you probably haven't heard of them accusamus labore
+                                                    sustainable VHS.
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="wrap-card">
                                             <div class="card-header" id="headingFive">
                                                 <h5 class="mb-0">
-                                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                    <button class="btn btn-link collapsed" type="button"
+                                                            data-toggle="collapse" data-target="#collapseFive"
+                                                            aria-expanded="false" aria-controls="collapseFive">
                                                         Какие рекомендации перед лазерной эпиляцией?
                                                     </button>
                                                 </h5>
                                             </div>
-                                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionSecond">
+                                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                                 data-parent="#accordionSecond">
                                                 <div class="card-body">
-                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                    terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+                                                    skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                                    Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                                    single-origin coffee nulla assumenda shoreditch et. Nihil anim
+                                                    keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                                                    occaecat craft beer farm-to-table, raw denim aesthetic synth
+                                                    nesciunt you probably haven't heard of them accusamus labore
+                                                    sustainable VHS.
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="wrap-card">
                                             <div class="card-header" id="headingSix">
                                                 <h5 class="mb-0">
-                                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                                    <button class="btn btn-link collapsed" type="button"
+                                                            data-toggle="collapse" data-target="#collapseSix"
+                                                            aria-expanded="false" aria-controls="collapseSix">
                                                         Можно ли проводить процедуры по удалению рубцов до 18 лет?
                                                     </button>
                                                 </h5>
                                             </div>
-                                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionSecond">
+                                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                                                 data-parent="#accordionSecond">
                                                 <div class="card-body">
-                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                    terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+                                                    skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                                    Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                                    single-origin coffee nulla assumenda shoreditch et. Nihil anim
+                                                    keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                                                    occaecat craft beer farm-to-table, raw denim aesthetic synth
+                                                    nesciunt you probably haven't heard of them accusamus labore
+                                                    sustainable VHS.
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-flex justify-content-center mt-lg-5">
+                                        <a href="#" class="btn btn-review">все отзывы</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center mt-lg-5 mb-lg-0 mb-3">
+                            <h2 class="sub-main_txt-pink">
+                                Начните свое преображение уже сегодня!
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center mt-lg-5">
+                            <a href="#" class="btn btn-about-clinic">больше о клинике</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-mailing">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text-center">
+                            <h4 class="main-txt-mailing">Подписка на рассылку</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text-center">
+                            <p class="sub-txt-mailing">Подпишитесь на новости Dr. Zapolska Clinic и будьте в курсе всех акций!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text-center">
+                            <form action="/">
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-lg input-mailing mr-lg-2 mr-md-2 mr-0"
+                                           placeholder="Введите ваш E-mail">
+                                    <button class="btn btn-mailing">
+                                        подписаться
+                                    </button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
