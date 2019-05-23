@@ -129,7 +129,7 @@
                                 </div>
                                 <div>
                                     <!--                                    <img src="images/header/user.png" alt="user">-->
-                                    <img src="../wp-content/themes/colton/dist/images/header/user.png" alt="user">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/header/user.png" alt="user">
                                 </div>
                             </div>
                         </div>
@@ -137,19 +137,7 @@
                     <div class="header-border"></div>
                     <div class="row">
                         <div class="header-justify-content-center col-lg-10 ">
-                            <div class="navbar-nav">
-                                <!--                                <li class="nav-item  dropdown">-->
-                                <!--                                    <a class="nav-item-main dropdown-toggle" href="#" id="navbarDropdownMain" role="button"-->
-                                <!--                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
-                                <!--                                        Услуги и цены-->
-                                <!--                                    </a>-->
-                                <!--                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMain">-->
-                                <!--                                        <a class="dropdown-item" href="#">Action</a>-->
-                                <!--                                        <a class="dropdown-item" href="#">Another action</a>-->
-                                <!--                                        <div class="dropdown-divider"></div>-->
-                                <!--                                        <a class="dropdown-item" href="#">Something else here</a>-->
-                                <!--                                    </div>-->
-                                <!--                                </li>-->
+                            <div class="navbar-nav"><!--                                </li>-->
                                 <?php
                                 wp_nav_menu(array(
                                     'menu' => 'main_header',
@@ -157,18 +145,13 @@
 
                                 ));
                                 ?>
-                                <!--                                <a class="nav-item nav-item-main " href="#">О клинике</a>-->
-                                <!--                                <a class="nav-item nav-item-main " href="#">Магазин</a>-->
-                                <!--                                <a class="nav-item nav-item-main " href="#">Акции и Новости</a>-->
-                                <!--                                <a class="nav-item nav-item-main " href="#">Отзывы</a>-->
-                                <!--                                <a class="nav-item nav-item-main " href="#">Контакты</a>-->
-                            </div>
+                               </div>
                         </div>
                         <div class="col-md-2">
                             <div class="items-for-user">
                                 <a href="#" class=""><i class="fas fa-search"></i></a>
                                 <a href="#"><i class="far fa-heart"></i></a>
-                                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="<?php echo get_permalink( wc_get_page_id( 'cart' ) ); ?>"><i class="fas fa-shopping-cart"></i></a>
                             </div>
                         </div>
                     </div>
@@ -213,7 +196,7 @@
                         <div class="items-for-user">
                             <a href="#" class=""><i class="fas fa-search"></i></a>
                             <a href="#"><i class="far fa-heart"></i></a>
-                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                            <a href="<?php echo get_permalink( wc_get_page_id( 'cart' ) ); ?>"><i class="fas fa-shopping-cart"></i></a>
                         </div>
                         <div class="lang-block">
                             <div class="lang-item">
@@ -231,7 +214,7 @@
                                 </span>
                             </div>
                             <div>
-                                <img src="../wp-content/themes/colton/dist/images/header/user.png" alt="user">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/header/user.png" alt="user">
                             </div>
                         </div>
 
@@ -240,18 +223,6 @@
 
                     </div>
                     <div class="navbar-nav second-row-nav">
-<!--                        <li class="nav-item  dropdown">-->
-<!--                            <a class="nav-item-tablet dropdown-toggle" href="#" id="navbarDropdownTablet" role="button"-->
-<!--                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
-<!--                                Услуги и цены-->
-<!--                            </a>-->
-<!--                            <div class="dropdown-menu" aria-labelledby="navbarDropdownTablet">-->
-<!--                                <a class="dropdown-item" href="#">Action</a>-->
-<!--                                <a class="dropdown-item" href="#">Another action</a>-->
-<!--                                <div class="dropdown-divider"></div>-->
-<!--                                <a class="dropdown-item" href="#">Something else here</a>-->
-<!--                            </div>-->
-<!--                        </li>-->
 	                    <?php
 	                    wp_nav_menu(array(
 		                    'menu' => 'main_header',
@@ -259,11 +230,6 @@
 
 	                    ));
 	                    ?>
-<!--                        <a class="nav-item nav-item-tablet " href="#">О клинике</a>-->
-<!--                        <a class="nav-item nav-item-tablet " href="#">Магазин</a>-->
-<!--                        <a class="nav-item nav-item-tablet " href="#">Акции и Новости</a>-->
-<!--                        <a class="nav-item nav-item-tablet " href="#">Отзывы</a>-->
-<!--                        <a class="nav-item nav-item-tablet " href="#">Контакты</a>-->
                     </div>
                 </div>
 
@@ -283,7 +249,7 @@
                 <div class="items-for-user">
                     <a href="#" class=""><i class="fas fa-search"></i></a>
                     <a href="#"><i class="far fa-heart"></i></a>
-                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                    <a href="<?php echo get_permalink( wc_get_page_id( 'cart' ) ); ?>"><i class="fas fa-shopping-cart"></i></a>
                 </div>
                 <div class="lang-block">
                     <div class="lang-item">
@@ -299,7 +265,7 @@
                         <span class="username-txt">Username</span>
                     </div>
                     <div>
-                        <img src="../wp-content/themes/colton/dist/images/header/user.png" alt="user">
+                        <img src="<?php echo get_template_directory_uri(); ?>assets/images/header/user.png" alt="user">
                     </div>
                 </div>
                 <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNavSm"
@@ -308,24 +274,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavSm">
                     <div class="navbar-nav">
-<!--                        <li class="nav-item  dropdown">-->
-<!--                            <a class="nav-item-sm dropdown-toggle" href="#" id="navbarDropdownSm" role="button"-->
-<!--                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
-<!--                                Услуги и цены-->
-<!--                            </a>-->
-<!--                            <div class="dropdown-menu" aria-labelledby="navbarDropdownSm">-->
-<!--                                <a class="dropdown-item" href="#">Action</a>-->
-<!--                                <a class="dropdown-item" href="#">Another action</a>-->
-<!--                                <div class="dropdown-divider"></div>-->
-<!--                                <a class="dropdown-item" href="#">Something else here</a>-->
-<!--                            </div>-->
-<!--                        </li>-->
-<!--                        <a class="nav-item nav-item-sm" href="#">О клинике</a>-->
-<!--                        <a class="nav-item nav-item-sm" href="#">Магазин</a>-->
-<!--                        <a class="nav-item nav-item-sm" href="#">Акции и Новости</a>-->
-<!--                        <a class="nav-item nav-item-sm" href="#">Отзывы</a>-->
-<!--                        <a class="nav-item nav-item-sm" href="#">Контакты</a>-->
-	                    <?php
+                        <?php
 	                    wp_nav_menu(array(
 		                    'menu' => 'main_header',
 		                    'menu_id' => 'primary-menu',
@@ -336,29 +285,5 @@
                 </div>
             </nav>
         </div>
-
     </header>
-
-
-
-    <!--	<header id="masthead" class="site-header">-->
-    <!--        <ul id="sidebar">-->
-    <!--            --><?php //dynamic_sidebar( 'main_header' ); ?>
-    <!--        </ul>-->
-    <!---->
-    <!---->
-    <!--		<nav id="site-navigation" class="main-navigation">-->
-    <!--			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">-->
-    <?php //esc_html_e( 'Primary Menu', 'colton' ); ?><!--</button>-->
-    <!--			--><?php
-    //			wp_nav_menu( array(
-    //				'menu' => 'main_header',
-    //				'menu_id'        => 'primary-menu',
-    //			) );
-    //			?>
-    <!--		</nav>-->
-    <!--         #site-navigation -->
-    <!--	</header>
-     #masthead -->
-
     <div id="content" class="site-content">

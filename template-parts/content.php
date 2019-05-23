@@ -25,9 +25,11 @@
 				colton_posted_on();
 				colton_posted_by();
 				?>
-			</div><!-- .entry-meta -->
+			</div>
+            <!-- .entry-meta -->
 		<?php endif; ?>
-	</header><!-- .entry-header -->
+	</header>
+    <!-- .entry-header -->
 
 	<?php colton_post_thumbnail(); ?>
 

@@ -5,7 +5,7 @@
   background-color: #ffffff;
   text-decoration: none;
   transition: .3s;
-  margin-bottom: 20px;
+  margin-bottom: 20px!important;
   &:hover{
     transform: scale(1.05);
   }
@@ -24,8 +24,8 @@
       margin-bottom: 6px;
     }
     .price{
-      color: $color__pink2;
-      font-size: 21px;
+      color: $color__pink2!important;
+      font-size: 21px!important;
       font-weight: 700;
 
     }
@@ -49,8 +49,11 @@
     margin-top: -4px;
     float: right;
     transition: 0.3s;
+    line-height: 1.5;
     &:hover{
       box-shadow: 0 3px 6px rgba(130, 1, 58, 0.65);
+      background-color: $color__pink2!important;
+      color: #ffffff!important;
     }
   }
 }

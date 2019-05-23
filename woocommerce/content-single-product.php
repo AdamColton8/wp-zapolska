@@ -32,6 +32,7 @@ if (post_password_required()) {
 }
 ?>
 <?php
+//single product
 remove_action ('woocommerce_single_product_summary', 'woocommerce_template_single_title', 5);
 remove_action ('woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10);
 remove_action ('woocommerce_single_product_summary', 'woocommerce_template_single_price', 10);
@@ -39,6 +40,22 @@ remove_action ('woocommerce_single_product_summary', 'woocommerce_template_singl
 remove_action ('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30);
 remove_action ('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
 remove_action ('woocommerce_single_product_summary', 'woocommerce_template_single_sharing', 50);
+
+
+/**
+ * Remove product data tabs
+ */
+add_filter( 'woocommerce_product_tabs', 'woo_remove_product_tabs', 98 );
+
+function woo_remove_product_tabs( $tabs ) {
+
+    unset( $tabs['description'] );      	// Remove the description tab
+    unset( $tabs['reviews'] ); 			// Remove the reviews tab
+    unset( $tabs['additional_information'] );  	// Remove the additional information tab
+
+    return $tabs;
+}
+
 ?>
 <section class="page-content_single-product">
     <div class="container">
@@ -133,9 +150,8 @@ remove_action ('woocommerce_single_product_summary', 'woocommerce_template_singl
 
     </div>
 
-<!--remove actions-->
 
-<!--    --><?php //do_action('woocommerce_after_single_product'); ?>
-    </div>
+    <?php do_action('woocommerce_after_single_product'); ?>
+
 </section>
 

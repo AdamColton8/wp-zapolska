@@ -1,0 +1,56 @@
+.count-product-wrap{
+  margin-top: 30px;
+  p.woocommerce-result-count{
+    margin-bottom: 25px;
+  }
+}
+
+.shop-name{
+  margin-top: 50px;
+  h2{
+    color: $color__dark1;
+    font-family: $font_family1;
+    font-size: 36px;
+    font-weight: 900;
+  }
+
+}
+.woocommerce-ordering{
+  margin-bottom: 35px!important;
+  float: left!important;
+  select.orderby{
+    width: 220px;
+    height: 36px;
+    border-radius: 18px;
+    border: 1px solid #f4bfc2;
+    background-color: #ffffff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    text-indent: 16px;
+    color: #f5a2ad;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    background-image: url(../images/main-page/select-arrow.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-position: 90%;
+  }
+}
+
+//cart
+.return-to-shop{
+  a.button.wc-backward{
+    box-shadow: 0 3px 6px rgba(137, 2, 62, 0.3);
+    border-radius: 23px;
+    background-color: #ea638c;
+    color: #fff;
+    transition: 0.3s;
+    &:hover{
+      box-shadow: 0 3px 6px rgba(10, 10, 10, 0.52);
+    }
+  }
+}
+

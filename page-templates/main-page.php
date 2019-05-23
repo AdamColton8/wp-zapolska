@@ -302,7 +302,7 @@ get_header();
                     ?>
                     <div class="col-lg-3 col-md-6 col-12">
                         <div class="to-catalog_wrap">
-                            <a class="link">
+                            <a class="link" href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/main-page/see_more.png">
                                 <span class="main-sub-txt">Посмотреть каталог</span>
                             </a>
