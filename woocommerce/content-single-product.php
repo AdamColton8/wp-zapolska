@@ -69,26 +69,10 @@ function woo_remove_product_tabs( $tabs ) {
         <div class="row">
             <div class="col-lg-12">
                 <div id="product-<?php the_ID(); ?>" <?php wc_product_class('single-product-main', $product); ?>>
-                    <div class="row">
+                    <div class="row mb-lg-5 mb-md-5 mb-2">
                         <div class="col-lg-7">
                             <div class="main-summary">
-                                <!-- <div class="summary entry-summary main-summary">-->
-                                <?php
-                                /**
-                                 * Hook: woocommerce_single_product_summary.
-                                 *
-                                 * @hooked woocommerce_template_single_title - 5
-                                 * @hooked woocommerce_template_single_rating - 10
-                                 * @hooked woocommerce_template_single_price - 10
-                                 * @hooked woocommerce_template_single_excerpt - 20
-                                 * @hooked woocommerce_template_single_add_to_cart - 30
-                                 * @hooked woocommerce_template_single_meta - 40
-                                 * @hooked woocommerce_template_single_sharing - 50
-                                 * @hooked WC_Structured_Data::generate_product_data() - 60
-                                 */
-                                //                                  do_action('woocommerce_single_product_summary');
 
-                                ?>
                                 <div class="wrap_price-availability">
                                     <div class="price-wrap">
                                         <?php woocommerce_template_single_price(); ?>
