@@ -220,3 +220,9 @@ function my_add_short_description() {
         echo '<div class="title-description">' . wp_trim_words(get_the_excerpt(), 8, '...') . '</div>';
     }
 }
+
+//add woocommerce to theme
+function mytheme_add_woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
+add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
